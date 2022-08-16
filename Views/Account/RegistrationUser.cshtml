@@ -1,0 +1,50 @@
+﻿@model BankApp.ViewModels.RegistrationUser;
+@using BankApp.Models;
+<h1>Регистрация нового пользователя</h1>
+<form method="post" asp-controller="Account" asp-action="RegistrationUser">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Email"></label><br />
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+        <label asp-for="UserName"></label><br />
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+            <label asp-for="Number"></label>
+            <input asp-for="Number" />
+            <span asp-validation-for="Number"></span>
+        </div>
+        <div>
+            <label asp-for="PassportSerier"></label>
+            <input asp-for="PassportSerier" />
+            <span asp-validation-for="PassportSerier"></span>
+        </div>
+         <div>
+            <label asp-for="PassportNum"></label>
+            <input asp-for="PassportNum" />
+            <span asp-validation-for="PassportNum"></span>
+        </div>
+         <div>
+            <label asp-for="IdentificationNum"></label>
+            <input asp-for="IdentificationNum" />
+            <span asp-validation-for="IdentificationNum"></span>
+        </div>
+    <div>
+        <label asp-for="Password"></label><br />
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="PasswordConfirm"></label><br />
+        <input asp-for="PasswordConfirm" />
+        <span asp-validation-for="PasswordConfirm"></span>
+    </div>
+    <div>
+        <input type="submit" value="Регистрация" />
+    </div>
+</form>

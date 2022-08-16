@@ -1,0 +1,20 @@
+﻿@model IEnumerable<BankApp.Models.Entity.Bank>
+<h2>Банки</h2>
+<div>
+    BelarusBank
+    BelinvestBank
+    Tehnobank
+</div>
+
+<h2>Вы зарегистрованы:</h2>
+ 
+@foreach(var bnk in @Model)
+{
+   <div>
+       @bnk.Name
+   </div> 
+                    
+}  
+
+<a asp-action="AddBank">Добавить банк</a>
+

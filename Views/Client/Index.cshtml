@@ -1,0 +1,25 @@
+﻿<div>
+    <a asp-action="Bank" asp-controller="Client">Банки</a>
+</div>
+
+<div>
+    <a asp-action="ChooseBankAccount" asp-controller="BankAccount">Счёты</a>
+</div>
+
+<div>
+   <a asp-action="Choose" asp-controller="Credit">Кредиты</a>
+</div>
+
+<div>
+    <a asp-action="Choose" asp-controller="Installment">Рассрочки</a>
+</div>
+
+<div>
+    <a asp-action="ChooseBankSalaryProject" asp-controller="Client">Зарплатный проект</a>
+</div>
+
+  <p>@User.Identity.Name</p>
+ 
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>

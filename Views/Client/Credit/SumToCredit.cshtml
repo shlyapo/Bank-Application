@@ -1,0 +1,18 @@
+﻿@model List<double>
+
+    @{
+    ViewBag.Title = "Index";
+    }
+
+    @for(int i=0;i<@Model.Count;i++)
+    {
+
+         <label> На счёте  @Model[i]</label>
+        <label> Полная сумма @Model[++i]</label>
+         <label> сумма @Model[++i]</label>
+         <form method="post" asp-action="PayCredit" asp-route-CreditId=@Model[3]> 
+             <input type="text" name="Sum" />
+              <button type="submit">OK</button>
+         </form>
+         break;
+    }

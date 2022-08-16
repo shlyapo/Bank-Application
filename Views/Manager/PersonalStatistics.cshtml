@@ -1,0 +1,45 @@
+﻿@model BankApp.ViewModels.MoneyStatisticsForClient
+<h2>Список клиентов</h2>
+<table>
+    <tr>
+        <th>Операция</th>
+        <th>Деньги</th>
+        
+    </tr>
+    
+
+            
+    @foreach(var apply in @BankApp.ViewModels.MoneyStatisticsForClient.IndividualInformation)
+    {
+         <tr>
+             <td>@apply.Operation</td>
+             <td>@apply.Money</td>
+         </tr>
+    }
+
+ </table>
+
+
+    @if(@BankApp.ViewModels.MoneyStatisticsForClient.Status!=false)
+    {
+        <h2>Отменить</h2>
+    <table>
+    <tr>
+        <th>Операция</th>
+        <th>Деньги</th>
+        
+    </tr>
+        @foreach(var apply in @BankApp.ViewModels.MoneyStatisticsForClient.IndividualStatistic)
+        {
+         <tr>
+             <td>@apply.Operation</td>
+             <td>@apply.Money</td>
+
+             <td><a asp-action="RejectPersonalStatistics" asp-route-MoneyStaticId="@apply.Id">Отменить</a></td>
+         </tr>
+        
+        }
+       </table>
+        
+    }
+   <a asp-action="Index" asp-controller="Manager">Назад</a>

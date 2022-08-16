@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Models">
+    <Position X="13.007" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Controller">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Data&#xD;&#xA;">
+    <Position X="0.517" Y="8.13" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="ViewModels&#xD;&#xA;">
+    <Position X="3.117" Y="8.097" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="BankApp.Models.Entity.Admin">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Bank">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAGAAAAAAIAAAAAACAgAgQAAAAAAAiAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Entity\Bank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.BankAccount">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQASACAEAAIAAAAAgAAABAQAAAAAAAAAACAAAAAAAAQ=</HashCode>
+      <FileName>Models\Entity\BankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Client">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAIAAAAAAgAAAAgAAAACAACAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Company">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAGAgAAAAAAAAAAAAAAAAAAAAAIAgAAACAAAAIAICA=</HashCode>
+      <FileName>Models\Entity\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Credit">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Credit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.InstallmentPlan">
+    <Position X="18.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAEAAAAAAAAggACAAUAAAAAAgAEACAAIAAAgQQ=</HashCode>
+      <FileName>Models\Entity\Installment plan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Manager">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQADAAAAAAAAAAAAAAAAAAgAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Operator">
+    <Position X="23.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQADAAAAAAAAAAAAAAAAAAgAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Operator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Rolea">
+    <Position X="20.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Entity\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.Specialist">
+    <Position X="16.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQADAAAAAAIAAAAAAAAAAAgAAAAAAAAAACAABAAAAAA=</HashCode>
+      <FileName>Models\Entity\Specialist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.User">
+    <Position X="22" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAEAAABGAgAQAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\Entity\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.ClientStatic">
+    <Position X="22" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAggAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ClientStatic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.CompanyAcc">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQASAAAAAAAAAAAAgAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\CompanyAcc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.MoneyStatistic">
+    <Position X="23.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAEAAAAAAAAggAAAAAAAAAIAAAAACEAAAAAAAA=</HashCode>
+      <FileName>Models\MoneyStatistic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.SpecStatistic">
+    <Position X="25.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\SpecStatistic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.InstallmentOrCreditModel.CreateInstallment">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAggAAAAQAAAAAABAAQCAAAAAAAAA=</HashCode>
+      <FileName>Models\InstallmentOrCreditModel\CreateInstallment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.SalaryModel.ClientSalary">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAAgAAAAAAAAAEAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\SalaryModel\ClientSalary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.SalaryModel.Salary">
+    <Position X="27.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAAA=</HashCode>
+      <FileName>Models\SalaryModel\Salary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.Entity.SalaryModel.SalaryProject">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYACAAAAAAAAAAAAgAAAAAAAAAEAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\SalaryModel\SalaryProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.CreateClient">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAACAAEAAAhEAAAAAAAAAAAAAAQCAAAAAAAAA=</HashCode>
+      <FileName>Models\CreateClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Models.ErrorViewModel">
+    <Position X="20.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Data.ApplicationDbContext">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIEEAAAAAIAAAgAACAgAQAAEAAiAggAAAAAAAAgoAA=</HashCode>
+      <FileName>Data\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Data.Initializer">
+    <Position X="3.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Initializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.EditUserViewModel">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegisterAndLog\EditUserViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.LoginViewModel">
+    <Position X="3.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAgAAA=</HashCode>
+      <FileName>ViewModels\RegisterAndLog\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.RegistrationUser">
+    <Position X="10.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAEAAABEAAAAAAgAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegisterAndLog\RegistrationUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.ActionsClients">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAACAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ActionsClients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.AddingGettingMoney">
+    <Position X="5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddingGettingMoney.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.ApplyCreditAndInstallment">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAgAAAAAQAAAAAABAAQCAEAAAAgAA=</HashCode>
+      <FileName>ViewModels\ApplyCreditAndInstallment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.BalanceViewModel">
+    <Position X="8.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BalanceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.BankAccViewModels">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BankAccViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.BankRepository">
+    <Position X="5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABQAAAAAAAAIgAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ViewModels\BankRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.ChangePasswordViewModel">
+    <Position X="5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ChangePasswordViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.ChangeRoleViewModel">
+    <Position X="13.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAgAAAAAAAgAAAAACAAAAAA=</HashCode>
+      <FileName>ViewModels\ChangeRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.ClientApplicationForSimular">
+    <Position X="12" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ClientApplicationForSimular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.CreateAcc">
+    <Position X="10.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CreateAcc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.CreateUserViewModel">
+    <Position X="6.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CreateUserViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.CreditOrInstallmentApplying">
+    <Position X="12" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAggAAAAAAAAAAABAEQCAAAAAAgAA=</HashCode>
+      <FileName>ViewModels\CreditOrInstallmentApplying.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.CustomPasswordValidator" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CustomPasswordValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BankApp.ViewModels.CustomUserValidator" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CustomUserValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BankApp.ViewModels.MoneyAcc">
+    <Position X="12" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MoneyAcc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.MoneyOfCompany">
+    <Position X="12" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAgAAAAAAAAAAgAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MoneyOfCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.MoneyStatisticsForClient">
+    <Position X="8.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>ViewModels\MoneyStatisticsForClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.SendSalary">
+    <Position X="13.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABQAAAAAAAAIgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SendSalary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.ViewModels.UserCreation">
+    <Position X="8.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAACAAEAAABEAAAAAAAAAAAAAAQAACAAAgAAA=</HashCode>
+      <FileName>ViewModels\UserCreation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.AccountController">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABAAAABAAAAABAgAIgAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.AdminController">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.BankAccountController">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABAAAAgAAAAAAAAgAAEAAAAEABACAAEo=</HashCode>
+      <FileName>Controllers\BankAccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.ClientController">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAACAAAAAAJAAAAAAEAAAAIAAAAAAIAAEAAAAACAA=</HashCode>
+      <FileName>Controllers\ClientController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.CreditController">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABgAAAAAABAgAAgAAAQAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\CreditController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.HomeController">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAIAAAAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.InstallmentController">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABAgAIgAAAAAAAAAAAAAAAAEAABAAAIA=</HashCode>
+      <FileName>Controllers\InstallmentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.ManagerController">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABAAAAAAQJAEECABCAAAgEAAQAAADAAEAgAAgAIA=</HashCode>
+      <FileName>Controllers\ManagerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.OperatorController">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAJAAERAACAAAgAAEAAAADAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\OperatorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.RolesController">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAAAAAAAAAAAAAAAAAgAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\RolesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApp.Controllers.SpecialistController">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAABBAAAAAAAAAAAAAAAAQAAAAEAAAAAAAQ=</HashCode>
+      <FileName>Controllers\SpecialistController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomIdentityApp.Controllers.UsersController">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAgAAAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UsersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BankApp.ViewModels.IPasswordValidator&lt;T&gt;">
+    <Position X="3.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegisterAndLog\IPasswordValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BankApp.ViewModels.IUserValidator&lt;TUser&gt;">
+    <Position X="5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegisterAndLog\IUserValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

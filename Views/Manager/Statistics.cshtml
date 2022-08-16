@@ -1,0 +1,12 @@
+﻿@using BankApp.Models.Entity;
+@using Microsoft.AspNetCore.Identity;
+@model Dictionary<BankApp.Models.Entity.Client,User>
+    <h1>Статистика</h1>       
+@foreach(var ClientUser in @Model)
+{
+    <div>
+        <a asp-action="PersonalStatistics" asp-route-client="@ClientUser.Key.Id">@ClientUser.Value.UserName</a>
+    </div>  
+         
+}
+<a asp-action="Index" asp-controller="Manager">Назад</a>

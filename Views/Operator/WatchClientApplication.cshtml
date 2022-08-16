@@ -1,0 +1,38 @@
+﻿@model BankApp.ViewModels.ClientApplicationForSimular
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Email</th>
+        <th>Серия паспорта</th>
+        <th>Номер паспорта</th>
+        <th>Иденфикационный номер</th>
+        <th>Профессия</th>
+        <th>Зарплата</th>
+        <th>Документы </th>
+    </tr>
+    @{
+        int idx = -1;
+    }
+@foreach(var userSalary in @Model.UserSalary)
+{
+        ++idx;
+        <tr>
+                <td>@userSalary.Key.UserName</td>
+                <td>@userSalary.Key.Email</td>
+                <td>@userSalary.Key.PassportSerier</td>
+                <td>@userSalary.Key.PassportNum</td>
+                <td>@userSalary.Key.IdentificationNum</td>
+                <td>@userSalary.Value.Profession</td>
+                <td>@userSalary.Value.Money</td>
+ 
+                 <td>@Model.Applications[idx].Simular</td>
+                
+             <td>
+                <a asp-action="ConfirmSalaryProject" asp-route-SalaryProjectApplicationId="@Model.Applications[idx].Id">Подтвердить</a>
+                        
+            </td>
+          </tr>
+        
+}    
+ </table>
+ <a asp-action="Index">Назад</a>

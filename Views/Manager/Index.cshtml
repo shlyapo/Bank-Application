@@ -1,0 +1,25 @@
+﻿
+<div>
+    <a asp-action="CreditRegistr" >Кредиты</a>
+</div>
+
+<div>
+    <a asp-action="InstallmentRegistr" >Рассрочки</a>
+</div>
+
+<div>
+    <a asp-action="Statistics" >Статистика</a>
+</div>
+
+<div>
+    <a asp-action="ChooseCompany">Зарплатный проект</a>
+</div>
+
+<div>
+    <a asp-action="ClientRegistr" >Регистрация клиентов</a>
+</div>
+  <p>@User.Identity.Name</p>
+ 
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>

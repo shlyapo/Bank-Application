@@ -1,0 +1,60 @@
+﻿@model Dictionary<List<BankApp.Models.Entity.User>, List<BankApp.Models.Entity.SalaryModel.Salary>>
+@using Microsoft.AspNetCore.Identity;
+
+<table>
+    <tr>
+       <th>Имя</th>
+        <th>Email</th>
+        <th>Серия паспорта</th>
+        <th>Номер паспорта</th>
+        <th>Иденфикационный номер</th>
+        <th>Телефон</th>
+    </tr>
+
+
+            
+@foreach(var user in @Model.Keys)
+{
+        @foreach(var us in user)
+        {
+            <tr>
+             
+             <td>@us.UserName</td>
+             <td>@us.Email</td>
+             <td>@us.PassportSerier</td>
+             <td>@us.PassportNum</td>
+             <td>@us.IdentificationNum/td>
+             <td>@us.PhoneNumber</td>
+             <form asp-action="SelectClient"  asp-route-id="@us.Id" method="get" >
+                 <td>
+                    <select name="SalaryId">
+                    @foreach (var salary in @Model.Values)
+                    {
+                        @foreach(var sal in salary)
+                        {
+                             <option value="@sal.Id">@sal.Profession  @sal.Money</option>
+                        }
+                       
+                        
+                    }
+
+                    </select>
+                  </td>
+                  
+                  <td>
+                      <button type="submit">
+                        Select
+                      </button>
+                  </td>
+
+             </form>
+             
+        </tr>
+            
+        }
+   
+}
+            
+    
+</table>
+<a asp-action="Index">Назад</a>

@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using BankApp.Models.InstallmentOrCreditModel;
+@model List<CreateInstallment>
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>сумма</th>
+        <th>Процент</th>
+        <th>количество месяцев</th>
+    </tr>     
+@foreach(var apply in @Model)
+    {
+         <tr>
+             <td>@apply.ClientName</td>
+             <td>@apply.Money</td>
+             <td>@apply.MoneyProcent</td>
+             <td>@apply.Count</td>
+             <td>
+                <form asp-action="RejectCreditOrInstallment" asp-route-Id='@apply.Id' method="post" >
+                  
+                    
+                 <button type="submit"> Отказать</button>
+                </form>
+
+                <form asp-action="ConfirmCredit" asp-route-Id="@apply.Id" method="post">
+                    
+                 <button type="submit"> Подтвердить</button>
+                </form>
+           
+              </td>
+         </tr>
+        
+    }
+ </table>
+ <a asp-action="Index" asp-controller="Manager">Назад</a>
+ 

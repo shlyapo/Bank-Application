@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model Dictionary<List<BankApp.Models.Entity.Credit>,int>
+@foreach(var bank in @Model.Values)
+{
+    <a asp-action="ApplyForCredit" asp-route-BankId="@bank">Apply for credit</a>
+}
+
+ <table>
+    <tr>
+        <th>Сумма</th>
+        <th>Данная сумма</th>
+        <th>Открыть кредит</th>
+        <th>Закрыть кредит</th>
+    </tr>
+@foreach(var credits in @Model.Keys)
+{
+        @foreach (var credit in credits)
+        {
+            <tr>
+
+                <td>@credit.NowMoney</td>
+                <td>@credit.MinusMoney</td>
+                <td>@credit.OpenTime</td>
+                <td>@credit.CloseTime</td>
+                <td>
+
+                    <a asp-action="SumToCredit" asp-route-id="@credit.Id">заплатить</a>
+
+
+                </td>
+            </tr>
+        }
+    }    
+ </table>

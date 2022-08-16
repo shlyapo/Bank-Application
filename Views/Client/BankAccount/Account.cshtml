@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model Dictionary<List<BankApp.Models.Entity.BankAccount>,int>
+@foreach(var id in @Model.Values)
+{
+    <a asp-action="Create" asp-route-BankId="@id">Создать счёт</a>
+}
+
+ <table>
+    <tr>
+        <th>Name</th>
+        <th>Sum</th>
+        <th>Status</th>
+    </tr>
+@foreach(var acco in @Model.Keys)
+{
+        @foreach(var acc in acco)
+        {
+            <tr>
+                <td>@acc.Name</td>
+                <td>@acc.Money</td>
+                <td>@acc.Status</td>
+             <td>
+            
+                        @if (acc.Status == "Free")
+                        {
+                            <form asp-action="Close" asp-route-id="@acc.Id" method="post">
+                                <a asp-action="Freeze" asp-route-id="@acc.Id">Заморозить</a>
+                                <a asp-action="Redact" asp-route-id="@acc.Id">Операции с деньгами</a>
+                  
+                                <button type="submit"> Delete</button>
+                             </form>
+                        }
+                        @if (acc.Status == "Freeze")
+                        {
+                             <a asp-action="Free" asp-route-id="@acc.Id">Разморозить счёт</a>
+                        }   
+   
+            </td>
+             </tr>
+        }
+}    
+ </table>

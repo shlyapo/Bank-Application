@@ -1,0 +1,10 @@
+﻿@model BankApp.ViewModels.CreateAcc
+<form method="post" asp-action="Create" asp-controller="BankAccount" >
+    <div >
+        <label for="Name">Имя счёта</label>
+        <input name="Name" />
+        <label for="Money">Сумма</label>
+        <input type ="text" name="Money" />
+    </div>
+    <button type="submit">Добавить</button>
+</form>

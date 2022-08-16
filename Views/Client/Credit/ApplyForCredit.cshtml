@@ -1,0 +1,43 @@
+﻿@using BankApp.Models.Entity;
+@model BankApp.ViewModels.ApplyCreditAndInstallment;
+<h1>Заявка</h1>
+<form method="post" asp-action="ApplyForCredit" asp-controller="Credit">
+    <div asp-validation-summary="ModelOnly"></div>
+        <div>
+            <label>Имя счёта</label>
+            <input type="text" asp-for="BankAccount" />
+        </div>
+        <br>
+
+        <div>
+             <label>Деньги</label>
+            <input type="text" asp-for="Money" />
+        </div>
+        <br>
+
+        <div>
+             <select asp-for="MoneyProcent">
+                <option value=2>2%</option>
+                <option value=3>3%</option>
+                <option value=5>5%</option>
+                <option value=7>7%</option>
+            </select>
+
+        </div>
+        <br>
+
+         <div>
+             <select asp-for="Count">
+                <option value=3>3 months</option>
+                <option value=6>6 months</option>
+                <option value=12>12 months</option>
+                <option value=24>24 month</option>
+                 <option value=50>50 month</option>
+            </select>
+        </div>
+         <br>
+
+        <div>
+            <input type="submit" value="submit" />
+        </div>
+</form>

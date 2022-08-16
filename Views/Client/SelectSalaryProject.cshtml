@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model Dictionary<List<BankApp.Models.Entity.SalaryModel.Salary>,int>
+@foreach(var ent in @Model)
+{
+    
+}
+<h2>Выберите зарплатный проект</h2>
+ <table>
+    <tr>
+        <th>Profession</th>
+        <th>Salary</th>
+        
+    </tr>
+@foreach(var sal in @Model)
+    {
+        int CompanyId = sal.Value;
+        @foreach(var salary in @sal.Key)
+        {
+         <tr>
+       
+            <td>@salary.Profession</td>
+            <td>@salary.Money</td>
+            
+            <td>
+            
+            <a asp-action="SalaryProjectApplication" asp-route-salaryId="@salary.Id" asp-route-EnterpriseId="@CompanyId">Добавить</a>
+                    
+  
+             </td>
+        </tr>
+            
+        }
+        
+    }
+    
+    
+   
+ </table>

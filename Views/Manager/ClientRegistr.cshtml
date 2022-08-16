@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model List<BankApp.ViewModels.UserCreation>
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Email</th>
+        <th>Серия паспорта</th>
+        <th>Номер паспорта</th>
+        <th>Иденфикационный номер</th>
+        <th>Телефон</th>
+    </tr>     
+@foreach(var user in @Model)
+{
+    <tr>
+             <td>@user.ClientName</td>
+             <td>@user.Email</td>
+             <td>@user.PassportSerier</td>
+             <td>@user.PassportNum</td>
+             <td>@user.IdentificationNum</td>
+             <td>@user.Number</td>
+             
+             <td>
+                <form asp-action="Reject" asp-route-clientId='@user.clId' asp-route-bankId="@user.bankId"  method="post" >
+                 <button type="submit"> Отклонить</button>
+                </form>
+             </td>
+             <td>
+                <form  asp-action="Confirm" asp-route-clientId='@user.clId' asp-route-bankId="@user.bankId"  method="post">
+                 <button type="submit"> Принять</button>
+                </form>
+              </td>
+   </tr>
+}
+            
+    
+</table>
+<a asp-action="Index" asp-controller="Manager">Назад</a>
